@@ -9,7 +9,7 @@ public class SolutionTest {
     public void testValidBST() {
         Node tree = new Node(5, new Node(4), new Node(7));
 
-        Assert.assertTrue(Solution.isValidBSTRec(tree));
+        Assert.assertTrue(Solution.isValidBST(tree));
     }
 
     @Test
@@ -17,6 +17,6 @@ public class SolutionTest {
         Node tree = new Node(5, new Node(4), new Node(7));
         tree.getRight().setLeft(new Node(2));
 
-        Assert.assertFalse(Solution.isValidBSTRec(tree));
+        Assert.assertFalse(Solution.isValidBST(tree));
     }
 }

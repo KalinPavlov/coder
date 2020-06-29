@@ -2,7 +2,7 @@ package lesson1;
 
 public class Solution {
 
-    public static boolean isValidBSTRec(Node tree) {
+    public static boolean isValidBST(Node tree) {
         return isValidBSTHelper(tree, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
 
